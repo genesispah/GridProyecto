@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Formularios</title>
+</head>
+<body>
+    <!-- GET o POST -->
+
+    <!-- enviar.php?nombre=jonathan&apellido=m -->
+    <form action="enviar.php" method="get"> <!-- novalidate -->
+        <div>
+            <label for="nombreid">Nombre:</label>
+            <input type="text" name="nombre" id="nombreid" value="Génesis" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ej. Perez">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="1" max="100">
+        </div>
+        <div>
+            <label for="tel">Telefono:</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+            <label for="url">Web:</label>
+            <input type="url" name="url" id="url" placeholder="Ej. https://educacionit.com">
+            <span>Debe contener http:// o https://</span>
+        </div>
+        <div>
+            <label for="clave">Clave:</label>
+            <input type="password" name="clave" id="clave">
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <div>
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" id="hora">
+        </div>
+        <div>
+            <h2>Sexo</h2>
+
+            <input type="radio" name="sexo" value="mujer" id="mujer">
+            <label for="mujer">Mujer</label>
+
+            <input type="radio" name="sexo" value="hombre" id="hombre" checked>
+            <label for="hombre">Hombre</label>
+        </div>
+        <div>
+            <h2>Gustos</h2>
+
+            <input type="checkbox" name="leer" value="leer" id="leer">
+            <label for="leer">Leer</label>
+
+            <input type="checkbox" name="escribir" value="escribir" id="escribir">
+            <label for="escribir">Escribir</label>
+
+            <input type="checkbox" name="dibujar" value="dibujar" id="dibujar">
+            <label for="dibujar">Dibujar</label>
+        </div>
+        <div>
+            <label for="comentario">Comentario</label>
+            <!-- <textarea id="comentario" name="comentario">Este es el valor del textarea</textarea> -->
+            <textarea id="comentario" name="comentario"></textarea>
+        </div>
+        <div>
+            <label for="pais">Pais</label>
+            <select id="pais" name="pais" required>
+                <option value="">Ingrese un pais</option>
+                <option value="bra">Brasil</option>
+                <option value="chi">Chile</option>
+                <option value="arg" selected>Argentina</option>
+            </select>
+        </div>
+
+
+        <button type="submit">Enviar</button>
+        <!-- <input type="submit" value="Enviar"> -->
+    </form>
+
+</body>
+</html>

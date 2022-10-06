@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+    <style>
+        /*
+comentario en css
+        selector {
+            propiedad: valor;
+            propiedad2: valor;
+            asi al cambiar color todo lo q sea h1 se pone del mismo
+            color y asi con todos
+        }*/
+
+        /* selector de Etiqueta*/
+        h1 { 
+            color:red;
+        }
+
+        h2 {
+            color:rgb(255,0,0);
+        }
+
+        h3 {
+            color: #FF0000;;
+        }
+
+        h4{ 
+            color: blue;
+        }
+
+        h5 {
+            color:pink;
+        }
+        h6{
+            color:orange; 
+            background-color: black;
+        }
+/*
+selector de ID/ el ID no se puede repetir
+ verde pasa a ser una etiqueta*/
+    #verde {
+         color:green;
+        }
+
+    /*#importante {
+    text-decoration: underline; 
+    font-weight: bold;
+     color: green;
+        }
+    #importante2 {
+    text-decoration: underline;
+    font-weight: bold; 
+    color: green;
+        }
+    #importante3 {
+    text-decoration: underline; 
+    font-weight: bold;
+    color: green;
+         }
+    asi no se recomineda pq para modificar hay q hac er uno por uno es mejor como el de abajo*/
+
+
+        #importante, 
+        #importante2, 
+        #importante3     {
+            text-decoration: underline; 
+            font-weight: bold;
+            color: green; }  /* este si quiero modificar es mas facil solo modifico el color o elemento directo*/  
+
+        /*
+        Selector de clase/ es un valor q si se puede repetir, 
+        trabaja de agrupador / se puede aplicar a parrafos o listas, abarca todo
+     */
+        .texto{
+            font-weight: bold;
+            color:orange;
+            }
+
+        .negrita {  
+            font-weight: bold ;
+            }
+
+        .italica {
+             font-style: italic;
+            }      
+
+        .subrayado {
+            text-decoration: underline;
+            }
+        
+            .text-left {
+                text-align: left;
+            }
+
+            .text-right{
+                text-align: right;
+            }
+
+            .text-center{
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="producto">
+        <h2>TV 24"</h2>
+        <p>precio $24.000</p>
+        <button>Comprar</button>
+    </div>
+    <span></span>
+    <hr> <!-- etiqueta de linea horzontal casi no se usa -->
+
+    <h1>Titulo</h1>
+    <h2>Subtitulo</h2>  
+    <h3>h3</h3>  
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>  
+    Texto comun 
+
+    <h1>Animales</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h2>Felinos</h2>
+        <p id="importante">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quaerat impedit velit ab provident corporis accusantium ipsam quibusdam labore aut temporibus!</p> <!--br salta linea-->
+    
+    <h3>Leones</h3>
+        <p id="importante2">Lorem ipsum dolor sit amet.</p>
+    
+    <h4>Leon XXX</h4>
+        <p id="importante3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus impedit dolores atque, sapiente vel! A eveniet facilis asperiores delectus.</p>
+
+    <h4>Leon YYY</h4>
+    <p id="verde">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <h3>Tigres</h3>
+    <p class="negrita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officia vitae quod.</p>
+   
+    <h4>Tigres XXX</h4>
+    <p class="italica">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Tenetur.</p>
+
+    <h4>Tigre YYY</h4>
+    <p class="subrayado">Lorem <strong> dolor sit amet consectetur adipisicing </strong>elit. Exercitationem amet repellat iure ex aut.</p>
+
+<!-- Strong pone negrita y mi texto-->
+    <h2>Caninos</h2>
+    <p class="negrita italica subrayado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum quo distinctio suscipit culpa odit?</p>
+
+    <h3>Lobos</h3>
+    <!-- atributo html id=verde/ el valor de un ID no se deberia repetir en doc HTML -->
+    <p id="verde">Lorem ipsum dolor, 
+        <b>sit amet consectetur adipisicing elit</b>. 
+
+        Error eius mollitia, ut dicta incidunt necessitatibus provident
+          eum laborum.</p>
+
+          <!-- span no aporta semantica ni estilo asociado -->
+         <span style="font-weight: bold;"> Iure facilis pariatur deserunt! Nemo, </span>
+
+          <span style="text-decoration: underline;"> rerum possimus consequatur consectetur porro nisi</span>
+
+           <span style="font-style: italic;">  repudiandae praesentium aliquid </span> ea laudantium hic assumenda 
+            impedit quisquam veritatis minus?</p>
+<!-- b pone negrita-->
+    <h4>Lobo XXX</h4>
+    <p class="text-center">Lorem <mark>ipsum dolor sit amet</mark>, consectetur adipisicing elit. Fugit magnam ab aperiam, illo voluptatibus laborum alias? Eaque amet, facere perspiciatis commodi consectetur iure necessitatibus porro magnam, sequi quod quibusdam laborum..</p>
+
+<!-- mark resalta con color, aporta semantica-->
+    <h4>Lobo YYY</h4>
+    <p class="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fugiat? Illo, beatae error similique nemo, veniam non hic possimus alias in ratione sed. Adipisci reprehenderit nihil, ipsa corrupti accusamus beatae dolorem earum sed voluptas nobis placeat ex amet ipsum tempore, eveniet cum eum non voluptatum provident. Nemo a quos fuga.</p>
+
+    <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fugiat? Illo, beatae error similique nemo, veniam non hic possimus alias in ratione sed. Adipisci reprehenderit nihil, ipsa corrupti accusamus beatae dolorem earum sed voluptas nobis placeat ex amet ipsum tempore, eveniet cum eum non voluptatum provident. Nemo a quos fuga.</p>
+
+    <hr>
+    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente sed est voluptatum modi mollitia aperiam natus, nostrum quibusdam beatae dicta, nisi officiis vel, velit earum porro ratione quas eum.</p>
+
+    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente sed est voluptatum modi mollitia aperiam natus, nostrum quibusdam beatae dicta, nisi officiis vel, velit earum porro ratione quas eum.</p>
+
+    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente sed est voluptatum modi mollitia aperiam natus, nostrum quibusdam beatae dicta, nisi officiis vel, velit earum porro ratione quas eum.</p>
+
+    <!-- listas ordenadas ol y desordenadas ul-->
+<ol> <!-- pasos a seguir/ instrucciones con orden especificos uso esta lista-->
+    <li class="texto">Item 01</li>
+    <li class="texto">Irem 02</li>
+    <li>Item 03</li>
+</ol>
+
+<ul>  <!-- sin orden especifico uso esta // estas tienen viñetas-->
+    <li>Item 01</li>
+    <li>Irem 02</li>
+    <li>Item 03</li>
+</ul>
+
+</body>
+</html>

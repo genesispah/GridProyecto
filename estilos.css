@@ -1,0 +1,94 @@
+/*
+    selector {
+        propiedad: valor;
+        propiedad2: valor;
+    }
+*/
+
+/* Selector de Etiqueta */
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: rgb(255, 0, 0);
+}
+
+h3 {
+    color: #FF0000;
+}
+
+h4 {
+    color: blue;
+}
+
+h5 {
+    color: pink;
+}
+
+h6 {
+    color: orange;
+    background-color: black;
+}
+
+/* Selector de ID */
+#verde {
+    color: green;
+}
+
+/* #importante {
+    text-decoration: underline;
+    font-weight: bold;
+    color: green;
+}
+
+#importante2 {
+    text-decoration: underline;
+    font-weight: bold;
+    color: green;
+}
+
+#importante3 {
+    text-decoration: underline;
+    font-weight: bold;
+    color: green;
+} */
+
+#importante,
+#importante2,
+#importante3 {
+    text-decoration: underline;
+    font-weight: bold;
+    color: blue;
+}
+
+/* Selector de Clase */
+.texto {
+    font-weight: bold;
+    color: orange;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.italica {
+    font-style: italic;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}

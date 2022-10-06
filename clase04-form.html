@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 04 / 05 - formularios</title>
+
+    <style>
+        div { 
+            border: 1px solid rgb(47, 151, 120);
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .label { 
+            display: block;
+
+        }
+
+        .input{ 
+            box-sizing: border-box;
+            width: 100%;
+            border: none;
+            background-color: white;
+        }
+
+        .input:focus {
+            outline: none;
+        }
+        div:focus-within {
+            border: 1px solid rgb(47, 151, 120);
+        }
+
+        div:focus-within label {
+            color: rgb(47, 151, 120);
+        }
+        h2 {
+            font-size:  16px;
+            margin: 0 0 5px;
+        }
+        label {
+            color: rgb(47, 151, 120);
+        }
+    </style>
+</head>
+<body>
+    <!-- si el campo no tiene name el valor no se envia-->
+    <form action="enviar.php" method="get"> <!-- validaciones nativas / novalidate-->
+        <div>
+           <label for="nombreid" class="label">Nombre:</label> <!--el for se relaciona con el id-->
+            <input class="input" type="text"  name="nombre" id="nombreid" value="Genesis" required> <!--required es obligatorio-->
+        </div>
+
+        <div>
+           <label for="apellido" class="label">Apellido:</label>
+            <input class="input" type="text"  name="apellido" id="apellido"
+            placeholder="Ej. Acosta">
+        </div>
+        
+        <div>
+            <label for="email" class="label">Email:</label>
+            <input class="input" type="text"  name="email" id="email">
+        </div>
+
+        <div>
+            <label for="edad" class="label"> Edad:</label>
+            <input class="input" type="number"  name="edad" id="edad" min="1" max="100">
+        </div>
+
+        <div>
+            <label for="tel" class="label">Telefono:</label>
+            <input class="input" type="tel"  name="tel" id="tel">
+        </div>
+
+        <div>
+            <label for="url" class="label">Web:</label>
+            <input class="input" type="url"  name="url" id="url"  placeholder="Ej. https://educacionIT.com">
+           <span>Debe contener http:// o https://</span>
+        </div>
+
+        <div>
+            <label for="clave" class="label">Clave:</label>
+            <input class="input" type="password"  name="clave" id="clave">
+        </div>
+
+        <div>
+            <label for="fecha" class="label">fecha:</label>
+            <input class="input" type="date"  name="fecha" id="fecha">
+        </div>
+
+        <div>
+            <label for="hora" class="label">Hora:</label>
+            <input class="input" type="time"  name="hora" id="hora">
+        </div>
+
+        <div>
+            <h2>Sexo</h2>
+            <!-- para que funcionen como grupo llevan el mismo name/ y lleva los value-->
+            <input type="radio" name="sexo"  value="mujer" id="mujer">
+            <label for="mujer">Mujer:</label>
+
+            <input type="radio" name="sexo" value="hombre" id="hombre" checked> <!--Checked es por defecto-->
+            <label for="hombre">Hombre:</label>
+        </div>
+
+        <div>
+        <h2>Gustos</h2>
+            <input type="checkbox" name="leer" value="leer" id="leer">
+            <label for="leer">Leer:</label>
+
+            <input type="checkbox" name="escribir" value="escribir" id="leer">
+            <label for="escribir">Escribir:</label>
+
+            <input type="checkbox" name="dibujar" value="dibujar" id="dibujar">
+            <label for="dibujar">Dibujar:</label>
+        </div>
+
+        <div>
+            <!-- <textarea id="comentario" name="comentario">este es el valor del textarea</textarea> -->
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario"></textarea>
+        </div>
+
+        <div>
+            <label for="pais">Pais:</label>
+            <select name="pais" id="pais" required>
+            <option>Ingrese un pais</option>
+            <option value="bra">Brasil</option>
+            <option value="ven">Venezuela</option>
+            <option value="arg">Argentina</option>
+            </select>
+        </div>
+
+    
+        <button>Enviar</button>
+        <!-- <button type="submit">Enviar</button> esta da mas libertad podemos usar icono-->
+        <!-- <input type="submit" value="Enviar"> este espera texto -->
+
+    </form> <!--necesita 2 atributos el form // action es la ruta donde se mandan los datos / method hay 2 GET o POST definen como se mandaran los datos, el metodo GET manda datos en la url y van con el ?, el metodo POST el request manda los datos en el body y no figura en el url es para altas y modificaciones-->
+</body>
+</html>

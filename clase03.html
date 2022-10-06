@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase 03 links</title>
+    <style>
+        /*seudoclases para los links y arrancan con dos puntos : */
+        a{
+           /* color:green; */
+           text-decoration: none; /* saca el subrayado*/
+        }
+
+        a:link { /* no visitados*/ 
+            color: green;
+        }
+
+        a:visited { /* visitados*/
+             color:orange;
+        }
+        a:active { /* activo (click)*/
+            color:black;
+        }
+        /* seudoclase cuando paso mouse se subraya *hover* | no es exclusivo de los links*/
+        a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: orange;
+        }
+        h1:hover {
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+   
+<h1>Links</h1>
+    <!-- URL absolutas:
+   recursos fuera de nuestro servidor/  las externas 
+   protocolo + nombre del dominio + ruta + seccion 
+   http/https + educacionit.com    + cursos -->
+
+    <!-- URL Relativas:
+        ruta + seccion 
+    las que usamos para nuestro propio proyecto-->
+
+    <!--
+        sitio (/) root
+            c1
+                c2
+                    c3
+                        c4
+                               a.html
+                    c.html 
+           c5          
+                b.html
+        a.html
+        <a href="../../../../c5/b.html">B</a>                    
+         <a href="../c.html">C</a>
+
+ || si  la url empieza con una / significa q vas a dar la ruta a partir del root
+         <a href="/c5/b.html">B</a>    
+         <a href="/c1/c2/c3/c.html">C</a>
+    -->
+
+    <a href="clase02-inline.html">Clase 02</a> <!-- relativo / el target es para q abra otra pestaña || son del mismo nivel pq ambos archivos estan en el mismo lugar-->
+
+    <!-- 
+        para:malito:para@server.com
+        copia: cc
+        copia oculta: bcc
+        asunto: subject
+        cuerpo: body
+    -->
+    <a href="mailto:para@server.com" title="enviar email a para@server.com">Contactame</a>
+
+    <a href="mailto:para@server.com?cc=copia@server.com" title="enviar email a para@server.com">Contactame</a>
+
+    <a href="mailto:para@server.com?cc=copia@server.com&bcc=oculto@server.com&subject=asunto&body=cuerpo" title="enviar email a para@server.com">Contactame</a>
+
+    <a href="tel:0810-220-8148">0810-220-8148</a>
+
+    <a href="https://educacionit.com" target="_blank">Educacion IT</a> <!-- absoluto || el target es para q abra otra pestaña -->
+
+    <a href="https://www.educacionit.com/curso-de-reactjs" target="_blank">Curso de React en EducacionIT</a>  
+
+
+</body>
+</html>

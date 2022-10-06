@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html, body{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            height: 200px;
+            width: 200px;
+            border: solid orange 3px;
+        }
+    </style>
+</head>
+<body>
+    <div  id="screen"></div>
+    <script>
+
+        let elDivScreen = document.getElementById("screen")
+
+        //EVENTOS DESDE LE CODIGO DE JAVASCRIPT
+        elDivScreen.addEventListener("click", function(event){
+            //El parametro EVENT es un listado de informacion sobre lo acurrido al momento de que el usaurio interactuara con la interfaz.
+            
+            //TARGET es el elemento sobre el que ocurrio el evetno.
+            let aQuienSeLeHizoClick = event.target
+            console.log(aQuienSeLeHizoClick)
+            
+            aQuienSeLeHizoClick.style.backgroundColor = "red"
+        })
+
+        elDivScreen.addEventListener("mouseenter", function(event){
+            let el = event.target
+            el.style.backgroundColor = "pink"
+        })
+
+        elDivScreen.addEventListener("mouseleave", function(event){
+            let el = event.target
+            el.style.backgroundColor = "green"
+        })
+
+        document.addEventListener("mousemove", function(event){
+            let x = event.clientX
+            let y = event.clientY
+            if(x < window.innerWidth / 2 ){
+                elDivScreen.style.backgroundColor = "yellow"
+            }else{
+                elDivScreen.style.backgroundColor = ""
+            }
+            console.log(`x:${x},y:${y}`)
+        })
+
+    </script>
+</body>
+</html>

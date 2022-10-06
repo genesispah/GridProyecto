@@ -1,0 +1,19 @@
+let elInputTextTextoIngresado = document.getElementById("textoIngresado")
+
+let elButtonAnalizar = document.getElementById("analizar")
+
+let elSpanSigno = document.getElementById("signo")
+let cantidadDeCaracteres = stringDeEjemplo.length
+
+function signo(){
+    let valorIngresado = elInputNumberNumeroIngresado.value
+    if(0 < valorIngresado){
+        elSpanSigno.innerHTML = `El numero ${valorIngresado} es POSITIVO`
+    }else if(valorIngresado < 0){
+        elSpanSigno.innerHTML = `El numero ${valorIngresado} es NEGATIVO`
+    }else if(valorIngresado == 0){
+        elSpanSigno.innerHTML = `El numero ${valorIngresado} NO TIENE SIGNO`
+    }
+}
+
+

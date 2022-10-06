@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 06</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fa-brands fa-youtube"></i>
+            <span class="nombre">YouTube</span>
+        </div>
+        <form class="form">
+            <input type="search" class="input" placeholder="Search">
+            <button class="boton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <button class="login">
+            <i class="fa-solid fa-user"></i>
+            SIGN IN
+        </button>
+    </header>
+    <main class="main">
+        <section class="detalle">
+            <!--
+                https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+                reemplazar watch?v= por embed/
+
+                https://www.youtube.com/embed/8aGhZQkoFbQ
+            -->
+
+            <iframe class="reproductor" width="560" height="315" src="https://www.youtube.com/embed/8aGhZQkoFbQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="video"></iframe>
+            
+            <h1 class="titulo">What the heck is the event loop anyway? | Philip Roberts | JSConf EU</h1>
+
+            <p>2,531,106 views  Oct 9, 2014  JavaScript programmers like to use words like, “event-loop”, “non-blocking”, “callback”, “asynchronous”, “single-threaded” and “concurrency”.</p>
+
+            <p>We say things like “don’t block the event loop”, “make sure your code runs at 60 frames-per-second”, “well of course, it won’t work, that function is an asynchronous callback!”</p>
+
+            <p>If you’re anything like me, you nod and agree, as if it’s all obvious, even though you don’t actually know what the words mean; and yet, finding good explanations of how JavaScript actually works isn’t all that easy, so let’s learn!</p>
+
+            <p>With some handy visualisations, and fun hacks, let’s get an intuitive understanding of what happens when JavaScript runs.</p>
+
+            <p>Transcript: <a href="https://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html" target="_blank">http://2014.jsconf.eu/speakers/philip...</a></p>
+
+            <p>License: For reuse of this video under a more permissive license please get in touch with us. The speakers retain the copyright for their performances.</p>
+
+            <div class="subscribers-ctn">
+                <div>
+                    <a href="https://www.youtube.com/c/JSConfEU" class="canal">JSConf</a>
+                    <span class="subscribers">240K subscribers</span>
+                </div>
+                <button class="boton">SUBSCRIBE</button>
+            </div>
+            
+
+            <section class="comentarios">
+                <article class="comentario">
+                    <div>
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLThgnvFQHdmuC1KkQtlhLvham6aO8KOIME6RWGupQ=s48-c-k-c0x00ffffff-no-rj" alt="" class="img">
+                    </div>
+                    
+                    <div class="ctn">
+                        <h2 class="title">marios2liquid 7 years ago</h2>
+                        
+                        <p>This talk is the perfect example of "If you can't explain it simply, you don't understand it well enough". Well done Philip.</p>
+    
+                        <div>
+                            <button class="btn" title="Like">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </button>
+                            <span class="cantidad">2.8K</span>
+                            <button class="btn" title="Dislike">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                            </button>
+                            
+                            <button class="btn">REPLY</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comentario">
+                    <div>
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLThgnvFQHdmuC1KkQtlhLvham6aO8KOIME6RWGupQ=s48-c-k-c0x00ffffff-no-rj" alt="" class="img">
+                    </div>
+                    
+                    <div class="ctn">
+                        <h2 class="title">marios2liquid 7 years ago</h2>
+                        
+                        <p>This talk is the perfect example of "If you can't explain it simply, you don't understand it well enough". Well done Philip.</p>
+    
+                        <div>
+                            <button class="btn" title="Like">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </button>
+                            <span class="cantidad">2.8K</span>
+                            <button class="btn" title="Dislike">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                            </button>
+                            
+                            <button class="btn">REPLY</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <aside class="videos">
+            
+            <a href="https://www.youtube.com/embed/cCOL7MC4Pl0" target="video" class="link">
+                <article class="video">
+                    <div>
+                        <img src="https://i.ytimg.com/vi/cCOL7MC4Pl0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVvKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCNyZyuY2TeOzf1f0L385dEy5C9YQ" alt="In The Loop">
+                    </div>
+                    <div class="ctn">
+                        <h2 class="titulo">Jake Archibald: In The Loop - setTimeout, micro tasks</h2>
+                        <span>JSConf</span>
+                        <span>530K views - 4 years ago</span>
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.youtube.com/embed/fBNz5xF-Kx4" target="video" class="link">
+                <article class="video">
+                    <div>
+                        <img src="https://i.ytimg.com/vi/fBNz5xF-Kx4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVvKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDbG1g3Clb4Gx30XGJfWnYqQzcqhw" alt="Node.js">
+                    </div>
+                    <div class="ctn">
+                        <h2 class="titulo">Node.js Crash Course</h2>
+                        <span>Traversy Media</span>
+                        <span>1.2M views - 3 years ago</span>
+                    </div>
+                </article>
+            </a>
+
+            <a href="https://www.youtube.com/embed/8zKuNo4ay8E" target="video" class="link">
+                <article class="video">
+                    <div>
+                        <img src="https://i.ytimg.com/vi/8zKuNo4ay8E/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVvKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDeU1UBKFoXbHJEM7FJbneuzlfLcA" alt="Asynchronous JavaScript">
+                    </div>
+                    <div class="ctn">
+                        <h2 class="titulo">Asynchronous JavaScript & EVENT LOOP from scratch 🔥 | Namaste JavaScript Ep.15</h2>
+                        <span>Akshay Saini</span>
+                        <span>387K views - 1 year ago</span>
+                    </div>
+                </article>
+            </a>
+        </aside>
+    </main>
+    <footer class="footer">Todos los derechos reservados &reg; 2022</footer>
+</body>
+</html>
